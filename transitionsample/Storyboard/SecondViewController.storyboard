@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAT-tg-b4i">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="67R-Tq-nnj">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="MAT-tg-b4i" customClass="SecondViewController" customModule="transitionsample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phF-xk-kNh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6X-TO-kFT" customClass="CoverView" customModule="transitionsample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URq-GB-WiL">
+                                        <rect key="frame" x="30" y="85" width="34" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="MAT-tg-b4i" eventType="touchUpInside" id="ZTF-J4-wyG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87057697769999998" green="0.50977226939999998" blue="0.20023285569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RTu-if-ZLu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Req-DD-ImC">
+                                <rect key="frame" x="166" y="333" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="V6X-TO-kFT" secondAttribute="bottom" id="4yA-7L-RdF"/>
+                            <constraint firstItem="V6X-TO-kFT" firstAttribute="width" secondItem="phF-xk-kNh" secondAttribute="width" id="5pu-gP-oCm"/>
+                            <constraint firstItem="V6X-TO-kFT" firstAttribute="top" secondItem="p1m-Jb-SXj" secondAttribute="top" constant="519" id="VMq-gN-0GS"/>
+                            <constraint firstItem="V6X-TO-kFT" firstAttribute="leading" secondItem="phF-xk-kNh" secondAttribute="leading" id="hFF-5p-0ls"/>
+                            <constraint firstItem="Req-DD-ImC" firstAttribute="centerX" secondItem="p1m-Jb-SXj" secondAttribute="centerX" id="mlL-9f-Mtd"/>
+                            <constraint firstItem="Req-DD-ImC" firstAttribute="centerY" secondItem="p1m-Jb-SXj" secondAttribute="centerY" id="pJz-zd-7kH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p1m-Jb-SXj"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VMq-gN-0GS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMD-Qs-8Yr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="176.76161919040482"/>
+        </scene>
+    </scenes>
+</document>
